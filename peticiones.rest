@@ -1,0 +1,59 @@
+GET http://localhost:3000/api/products
+
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Sarten",
+    "description": "Sarten redonda para freir",
+    "price": 25,
+    "stock": 300,
+    "department": "cocina",
+    "available": true
+}
+
+###
+
+ 
+PUT http://localhost:3000/api/products/65e05e4427a6222bf5dfde87
+Content-Type: 
+
+{
+    "price": 34,
+    "stock": 250,
+    "available": false
+}
+
+###
+
+DELETE http://localhost:3000/api/products/65e05e4427a6222bf5dfde87
+
+###
+
+GET http://localhost:3000/api/products/department/oficina
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: : application/json
+
+{
+    "username": "Gonfernan",
+    "email": "g.fernan@gmail.com",
+    "password": "1234"
+}
+
+###
+
+PUT http://localhost:3000/api/users/add_product/65e0797f2bc078a91f995359
+Content-Type: 
+
+{
+    "productId":   "65e0501ccd5072af8975d604"
+}
+
+###
+
+GET  http://localhost:3000/api/users
